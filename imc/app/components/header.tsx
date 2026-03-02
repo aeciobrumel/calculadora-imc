@@ -2,8 +2,8 @@ import logo from '../assets/powered.png';
 import Image from 'next/image';
 const Header = () => {
     return (
-        <header className='flex w-full'>
-            <Image src={logo} className='w-auto h-auto' alt="Logo da calculadora de IMC" />
+        <header className=' '>
+            <Image src={logo} alt="Logo da calculadora de IMC" width={150} />
         </header>
     );
 }
