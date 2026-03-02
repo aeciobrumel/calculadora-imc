@@ -42,16 +42,13 @@ npm run dev
 - `app/components/header.tsx`: cabeçalho da aplicação
 - `app/components/gridItem.tsx`: card de categoria/resultado
 
-## Prints do Front-end
-
-Adicione aqui as imagens do projeto (recomendado: salvar em `docs/images`).
 
 ### Tela inicial
 
-<img width="1913" height="957" alt="image" src="https://github.com/user-attachments/assets/eaedda48-8810-4bd2-aa1e-a8387b5566ae" />
+<img  width="700" alt="image" src="https://github.com/user-attachments/assets/eaedda48-8810-4bd2-aa1e-a8387b5566ae" />
 
 ### Resultado do cálculo
 
-<img width="1479" height="923" alt="image" src="https://github.com/user-attachments/assets/df31cdbb-19bf-4836-ab77-7a465bc45580" />
+<img  width="700" alt="image" src="https://github.com/user-attachments/assets/df31cdbb-19bf-4836-ab77-7a465bc45580" />
 
 
