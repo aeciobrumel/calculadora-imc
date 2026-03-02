@@ -3,7 +3,8 @@ import Header from "./components/header";
 import GridItem from "./components/gridItem";
 import { useState } from "react";
 import { calculateImc, level, levels } from "./helpers/imc";
-
+import Image from "next/image";
+import back from "./assets/leftarrow.png";
 export default function Home() {
 
   const [height, setHeight] = useState<number>(0);
@@ -60,6 +61,9 @@ export default function Home() {
           )}
           {showItem && (
             <div className="col-span-2 row-span-2 w-full h-full">
+              <div className="mb-4 bg-cyan-600 p-2 rounded-full cursor-pointer w-max" onClick={() => setShowItem(null)}>
+                <Image src={back} width={30} height={30} alt="imagem voltar" />
+              </div>
               <GridItem
                 icon={showItem.icon}
                 title={showItem.title}
