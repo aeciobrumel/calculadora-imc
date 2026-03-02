@@ -48,12 +48,10 @@ Adicione aqui as imagens do projeto (recomendado: salvar em `docs/images`).
 
 ### Tela inicial
 
-![Tela inicial](docs/images/tela-inicial.png)
+<img width="1913" height="957" alt="image" src="https://github.com/user-attachments/assets/eaedda48-8810-4bd2-aa1e-a8387b5566ae" />
 
 ### Resultado do cálculo
 
-![Resultado do cálculo](docs/images/resultado-imc.png)
+<img width="1479" height="923" alt="image" src="https://github.com/user-attachments/assets/df31cdbb-19bf-4836-ab77-7a465bc45580" />
 
-### Exemplo em mobile
 
-![Versão mobile](docs/images/mobile.png)
