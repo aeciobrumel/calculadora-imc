@@ -1,8 +1,5 @@
-import Image from "next/image";
-import Header from "./components/header";
-import down from './assets/down.png';
-import up from './assets/up.png';
-import GridItem from "./components/gridItem";
+import Header from "@/app/components/header";
+import GridItem from "@/app/components/gridItem";
 
 export default function Home() {
   return (
@@ -30,20 +27,20 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 flex-1">
           <GridItem
-            icon={down}
+            icon="down"
             title="Magreza"
             subtitle="IMC menor que 18,5"
-            iconSize={20}
+            imc={[0, 18.5]}
             color={{
               box: "bg-gray-400",
               icon: "bg-gray-500"
             }}
           />
           <GridItem
-            icon={up}
+            icon="up"
             title="Normal"
             subtitle="Imc está entre 18,5 e 24.9"
-            iconSize={20}
+            imc={[18.5, 24.9]}
             color={{
               box: "bg-emerald-500",
               icon: "bg-emerald-600"
@@ -51,20 +48,20 @@ export default function Home() {
           />
 
           <GridItem
-            icon={down}
+            icon="down"
             title="Sobrepeso"
             subtitle="Imc está entre 25 e 30"
-            iconSize={20}
+            imc={[25, 30]}
             color={{
               box: "bg-yellow-400",
               icon: "bg-yellow-500"
             }}
           />
           <GridItem
-            icon={down}
+            icon="down"
             title="Obesidade"
             subtitle="Imc está acima de 30.1"
-            iconSize={20}
+            imc={[30.1, 99]}
             color={{
               box: "bg-red-600",
               icon: "bg-red-700"

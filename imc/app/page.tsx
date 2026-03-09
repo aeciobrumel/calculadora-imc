@@ -34,7 +34,7 @@ export default function Home() {
       </div>
       {/*  Conteúdo principal da página */}
       <div className="flex flex-col md:flex-row">
-        <div className="flex flex-col p-3 flex-1 md-0 md:mr-[40px]">
+        <div className="flex flex-col p-3 flex-1 md:mr-[40px]">
           <h1 className="text-5xl font-bold mb-4">Calculadora de IMC</h1>
           <p className="text-1xl">o imc é a sigla de Indice de Massa Corporal, parâmetro adotado pela Organização Mundeial da Saúde paa calcular o peso ideal de cada pessoa. </p>
           <input
@@ -73,7 +73,7 @@ export default function Home() {
           {showItem && (
             <div className="col-span-2 row-span-2 w-full h-full">
               <div className="mb-4 bg-cyan-600 p-2 md:rounded-full rounded-lg cursor-pointer w-max absolute flex justify-center items-center
-              d:ml-[-25px] md:mt-[150px]
+              md:ml-[-25px] md:mt-[150px]
               
               " onClick={() => handleBack()}>
                 <Image src={back} width={30} height={30} alt="imagem voltar" />

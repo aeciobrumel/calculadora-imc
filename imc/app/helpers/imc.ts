@@ -1,5 +1,3 @@
- import { StaticImageData } from "next/image";
-
 export type level = {
     title: string;
     icon:  'up' | 'down';
@@ -56,10 +54,9 @@ export const levels : level[] = [
 export const calculateImc = (height:number, weight:number) => {
     const imc = weight / (height * height);
 
-    for (let i in levels) {
-        if(imc >= levels[i].imc[0] && imc <levels[i].imc[1] ){
-            levels[i].yourImc = imc
-            return levels[i]
+    for (const item of levels) {
+        if(imc >= item.imc[0] && imc < item.imc[1]){
+            return { ...item, yourImc: imc };
         }
     }
 
