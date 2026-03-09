@@ -2,14 +2,14 @@
 import Header from "./components/header";
 import GridItem from "./components/gridItem";
 import { useState } from "react";
-import { calculateImc, level, levels } from "./helpers/imc";
+import { calculateImc, Level, levels } from "./helpers/imc";
 import Image from "next/image";
 import back from "./assets/leftarrow.png";
 export default function Home() {
 
   const [height, setHeight] = useState<number>(0);
   const [weight, setWeight] = useState(0);
-  const [showItem, setShowItem] = useState<level | null>(null);
+  const [showItem, setShowItem] = useState<Level | null>(null);
 
   const handleCalculate = (height: number, weight: number) => {
     if (height > 0 && weight > 0) {
@@ -66,7 +66,6 @@ export default function Home() {
                 title={item.title}
                 subtitle={item.subtitle}
                 color={item.color}
-                imc={item.imc}
               />
             ))
           )}
@@ -83,7 +82,6 @@ export default function Home() {
                 title={showItem.title}
                 subtitle={showItem.subtitle}
                 color={showItem.color}
-                imc={showItem.imc}
                 yourImc={showItem.yourImc}
               />
             </div>

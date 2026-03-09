@@ -1,9 +1,13 @@
 import Image from "next/image";
-import { level } from "../helpers/imc";
+import { Level } from "../helpers/imc";
 import down from "../assets/down.png";
 import up from "../assets/up.png";
 
-const GridItem = ({ color, icon, title, subtitle, yourImc }: level) => {
+type GridItemProps = Pick<Level, "color" | "icon" | "title" | "subtitle" | "yourImc"> & {
+    imc?: number[];
+};
+
+const GridItem = ({ color, icon, title, subtitle, yourImc }: GridItemProps) => {
     return (
         <div className={`${color.box} text-center w-full h-full p-[20px] rounded-2xl flex items-center justify-center flex-col`}>
             <div className={`${color.icon} p-4 rounded-full`}>

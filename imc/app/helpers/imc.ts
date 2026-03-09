@@ -1,4 +1,4 @@
-export type level = {
+export type Level = {
     title: string;
     icon:  'up' | 'down';
     color: {
@@ -11,7 +11,10 @@ export type level = {
 
 }
 
-export const levels : level[] = [ 
+// Backward-compatible alias for existing imports.
+export type level = Level;
+
+export const levels : Level[] = [ 
     {
         title: "Magreza",
         icon: "down",
@@ -51,7 +54,7 @@ export const levels : level[] = [
     }
   ];
   
-export const calculateImc = (height:number, weight:number) => {
+export const calculateImc = (height:number, weight:number): Level | null => {
     const imc = weight / (height * height);
 
     for (const item of levels) {
